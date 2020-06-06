@@ -59,4 +59,15 @@ jobs:
         name: manifest.yml
         # A file, directory or wildcard pattern that describes what to upload
         path: ./manifest.yml
- 
+  
+    - name: Before Deploy 
+      run: |
+        mkdir deploy
+        cp ./manifest.yml deploy/
+      
+    - name: Deploy 
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: manifest # The branch the action should deploy to.
+        FOLDER: deploy # The folder the action should deploy.
