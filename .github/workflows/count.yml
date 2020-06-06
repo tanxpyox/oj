@@ -36,7 +36,7 @@ jobs:
         gem install rjson
 
     # Runs a set of commands using the runners shell
-    - name: Create manifest.yml
+    - name: Create manifest files
       run: |
         export compCount=$( grep -L "//dev" **/*.cpp | wc -l )
         export compList=$( grep -L "//dev" **/*.cpp | sed 's/.cpp.*//;s/^/    - /' )
@@ -67,9 +67,7 @@ jobs:
         EOF
         
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < manifest.yml > manifest.json
-    
-    - name: Create badges
-      run: |
+        
         cat <<EOF > ./completed.yml
         schemaVersion: 1
         label: "Tasks Completed"
@@ -87,6 +85,7 @@ jobs:
         color: blue
         style: for-the-badge
         EOF
+        
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < ip.yml > ip.json
     
     - name: Validate
