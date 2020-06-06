@@ -71,7 +71,7 @@ jobs:
         cat <<EOF > ./completed.yml
         schemaVersion: 1
         label: "Tasks Completed"
-        message: $compCount
+        message: "$compCount"
         color: green
         style: for-the-badge
         EOF
@@ -81,7 +81,7 @@ jobs:
         cat <<EOF > ./ip.yml
         schemaVersion: 1
         label: "Tasks in Progress"
-        message: $attempted
+        message: "$attempted"
         color: blue
         style: for-the-badge
         EOF
