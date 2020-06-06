@@ -46,14 +46,18 @@ jobs:
         export in=$'  '
         cat <<EOF > ./manifest.yml
         # Online Judge Storage Status
-        # repo: $GITHUB_REPOSITORY
-        # Author:
-        #   - tanxpyox <tanxpyox@gmail.com>
-        # License: AGPLv3 <https://github.com/tanxpyox/oj/blob/master/LICENSE>
-        #
-        # Last Update: $(TZ=Asia/Hong_Kong date '+%Y-%m-%d %H:%M:%S')
-        # Commit hash: $GITHUB_SHA
-        # Triggered By: $GITHUB_ACTOR
+        
+        metadata:
+          repo: $GITHUB_REPOSITORY
+          author:
+            - tanxpyox <tanxpyox@gmail.com>
+          license: 
+            AGPLv3 <https://github.com/tanxpyox/oj/blob/master/LICENSE>
+        
+        last-update
+          time: $(TZ=Asia/Hong_Kong date '+%Y-%m-%d %H:%M:%S')
+          commit-hash: $GITHUB_SHA
+          triggered-by: $GITHUB_ACTOR
         
         completed: 
           count: $compCount
