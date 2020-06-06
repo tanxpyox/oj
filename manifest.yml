@@ -1,0 +1,28 @@
+# Online Judge Storage Status
+# repo: tanxpyox/oj
+# Author:
+#   - tanxpyox <tanxpyox@gmail.com>
+# License: AGPLv3 <https://github.com/tanxpyox/oj/blob/master/LICENSE>
+# Last Update: 2020-06-06 21:39:32
+
+completed: 
+  count: 13
+  tasks: |
+    DMOJ/16bitswonly
+    DMOJ/4ever
+    DMOJ/aminusb
+    DMOJ/ccc09s2
+    DMOJ/ccc11j1
+    DMOJ/ccc11s3
+    DMOJ/ccc13j2
+    DMOJ/coci07c6p3
+    DMOJ/dpa
+    DMOJ/dpb
+    DMOJ/dpc
+    DMOJ/dpk
+    DMOJ/helloworld
+
+under-development: 
+  count: 1
+  tasks: |
+    DMOJ/dpd
