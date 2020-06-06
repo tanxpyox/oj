@@ -21,13 +21,16 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Setup Ruby, JRuby and TruffleRuby
+      uses: ruby/setup-ruby@v1.34.0
+
     # Runs a set of commands using the runners shell
     - name: Create manifest.yml
       run: |
         export compCount=$( grep -L "//dev" **/*.cpp | wc -l )
-        export compList=$( grep -L "//dev" **/*.cpp | sed 's/.cpp.*//;s/^/    /' )
+        export compList=$( grep -L "//dev" **/*.cpp | sed 's/.cpp.*//;s/^/    - /' )
         export attempted=$( grep "//dev" **/*.cpp | wc -l )
-        export incompList=$( grep "//dev" **/*.cpp | sed 's/.cpp.*//;s/^/    /' )
+        export incompList=$( grep "//dev" **/*.cpp | sed 's/.cpp.*//;s/^/    - /' )
         export nl=$'\n'
         export in=$'  '
         cat <<EOF > ./manifest.yml
@@ -43,30 +46,23 @@ jobs:
         
         completed: 
           count: $compCount
-          tasks: |
+          tasks:
         $compList
         
         under-development: 
           count: $attempted
-          tasks: |
+          tasks:
         $incompList
         EOF
         
     - name: Validate
       run: cat ./manifest.yml
-      
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        # Artifact name
-        name: manifest.yml
-        # A file, directory or wildcard pattern that describes what to upload
-        path: ./manifest.yml
   
     - name: Before Deploy 
       run: |
         mkdir deploy
-        cp ./manifest.yml deploy/
+        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < manifest.yml > manifest.json
+        cp ./manifest.* deploy/
       
     - name: Deploy 
       uses: JamesIves/github-pages-deploy-action@releases/v3
