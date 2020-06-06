@@ -53,7 +53,7 @@ jobs:
           license: 
             AGPLv3: https://github.com/tanxpyox/oj/blob/master/LICENSE
         
-        last-update
+        last-update:
           time: $(TZ=Asia/Hong_Kong date '+%Y-%m-%d %H:%M:%S')
           commit-hash: $GITHUB_SHA
           triggered-by: $GITHUB_ACTOR
