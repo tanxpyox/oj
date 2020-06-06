@@ -66,6 +66,29 @@ jobs:
         $incompList
         EOF
         
+        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < manifest.yml > manifest.json
+    
+    - name: Create badges
+      run: |
+        cat <<EOF > ./completed.yml
+        schemaVersion: 1
+        label: "Tasks Completed"
+        message: $compCount
+        color: green
+        style: for-the-badge
+        EOF
+        
+        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < completed.yml > completed.json
+
+        cat <<EOF > ./ip.yaml
+        schemaVersion: 1
+        label: "Tasks in Progress"
+        message: $attempted
+        color: blue
+        style: for-the-badge
+        EOF
+        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < ip.yml > ip.json
+    
     - name: Validate
       run: cat ./manifest.yml
   
@@ -73,7 +96,8 @@ jobs:
       run: |
         mkdir deploy
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < manifest.yml > manifest.json
-        cp ./manifest.* deploy/
+        cp ./manifest.yml deploy/
+        cp ./*.json deploy/
       
     - name: Deploy 
       uses: JamesIves/github-pages-deploy-action@releases/v3
