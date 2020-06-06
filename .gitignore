@@ -33,3 +33,6 @@
 
 # Executables, recursive
 **/*.exe
+
+# Visual Studio files
+.vs/*
