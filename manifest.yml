@@ -4,28 +4,28 @@
 #   - tanxpyox <tanxpyox@gmail.com>
 # License: AGPLv3 <https://github.com/tanxpyox/oj/blob/master/LICENSE>
 #
-# Last Update: 2020-06-06 21:48:46
-# Commit hash: 861d945aa2798baaa738cf858d6afb2cef523e79
+# Last Update: 2020-06-06 22:05:20
+# Commit hash: b5fa9207e12aeeb240df0a48947d03b281879a1f
 # Triggered By: tanxpyox
 
 completed: 
   count: 13
-  tasks: |
-    DMOJ/16bitswonly
-    DMOJ/4ever
-    DMOJ/aminusb
-    DMOJ/ccc09s2
-    DMOJ/ccc11j1
-    DMOJ/ccc11s3
-    DMOJ/ccc13j2
-    DMOJ/coci07c6p3
-    DMOJ/dpa
-    DMOJ/dpb
-    DMOJ/dpc
-    DMOJ/dpk
-    DMOJ/helloworld
+  tasks:
+    - DMOJ/16bitswonly
+    - DMOJ/4ever
+    - DMOJ/aminusb
+    - DMOJ/ccc09s2
+    - DMOJ/ccc11j1
+    - DMOJ/ccc11s3
+    - DMOJ/ccc13j2
+    - DMOJ/coci07c6p3
+    - DMOJ/dpa
+    - DMOJ/dpb
+    - DMOJ/dpc
+    - DMOJ/dpk
+    - DMOJ/helloworld
 
 under-development: 
   count: 1
-  tasks: |
-    DMOJ/dpd
+  tasks:
+    - DMOJ/dpd
