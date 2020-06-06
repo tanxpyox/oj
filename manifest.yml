@@ -1,12 +1,15 @@
 # Online Judge Storage Status
-# repo: tanxpyox/oj
-# Author:
-#   - tanxpyox <tanxpyox@gmail.com>
-# License: AGPLv3 <https://github.com/tanxpyox/oj/blob/master/LICENSE>
-#
-# Last Update: 2020-06-06 22:54:42
-# Commit hash: 9a8dc673b9f546e758b39ff31c67a5f6c302d911
-# Triggered By: tanxpyox
+metadata:
+  repo: tanxpyox/oj
+  author:
+    tanxpyox: tanxpyox@gmail.com
+  license: 
+    AGPLv3: https://github.com/tanxpyox/oj/blob/master/LICENSE
+
+last-update:
+  time: 2020-06-06 23:26:42
+  commit-hash: ee8302a84cc844b0bb2b20ffd904d97d237ebeca
+  triggered-by: tanxpyox
 
 completed: 
   count: 13

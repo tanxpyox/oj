@@ -1,4 +1,18 @@
 {
+  "metadata": {
+    "repo": "tanxpyox/oj",
+    "author": {
+      "tanxpyox": "tanxpyox@gmail.com"
+    },
+    "license": {
+      "AGPLv3": "https://github.com/tanxpyox/oj/blob/master/LICENSE"
+    }
+  },
+  "last-update": {
+    "time": "2020-06-06 23:26:42 +0000",
+    "commit-hash": "ee8302a84cc844b0bb2b20ffd904d97d237ebeca",
+    "triggered-by": "tanxpyox"
+  },
   "completed": {
     "count": 13,
     "tasks": [
