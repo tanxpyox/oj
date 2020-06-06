@@ -80,7 +80,7 @@ jobs:
         
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < completed.yml > completed.json
 
-        cat <<EOF > ./ip.yaml
+        cat <<EOF > ./ip.yml
         schemaVersion: 1
         label: "Tasks in Progress"
         message: $attempted
