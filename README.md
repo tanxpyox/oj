@@ -2,7 +2,8 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tanxpyox/oj/Task%20Census/master?label=Task%20Census&logo=github&style=for-the-badge)&nbsp;
 ![Tasks completed badge](https://img.shields.io/endpoint?color=yellow&label=Completed&style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Ftanxpyox%2Foj%2Fmanifest%2Fcompleted.json)&nbsp;
 ![Working tasks badge](https://img.shields.io/endpoint?label=In%20Progress&style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Ftanxpyox%2Foj%2Fmanifest%2Fip.json)&nbsp;
-![Repo size tag](https://img.shields.io/github/languages/code-size/tanxpyox/oj?color=purple&style=for-the-badge)
+![Repo size tag](https://img.shields.io/github/languages/code-size/tanxpyox/oj?color=purple&style=for-the-badge)&nbsp;
+![GitHub](https://img.shields.io/github/license/tanxpyox/oj?style=for-the-badge)
 
 ## Note
 * Source codes in this repo are full solutions, unless specified with `//dev` in the header.
