@@ -6,12 +6,12 @@
 ![GitHub](https://img.shields.io/github/license/tanxpyox/oj?style=for-the-badge)
 
 ## Note
-* Source codes in this repo are full solutions, unless specified with `//dev` in the header.
-* The list of completed or attempted tasks can be found [here](https://github.com/tanxpyox/oj/blob/manifest/manifest.yml).
+* All files in this repo are full solutions, unless otherwise specified. (usually with the `//dev` header)
+* The manifest can be found [here](https://github.com/tanxpyox/oj/blob/manifest/manifest.yml).
 
 ## Key (in alphabetical order)
-* `CF/`: Hosts solutions from [Codeforces](https://codeforces.com)
-* `DMOJ/`: Hosts solutions from [DMOJ](https://dmoj.ca)
+* [`CF/`](CF/): Hosts solutions from [Codeforces](https://codeforces.com)
+* [`DMOJ/`](DMOJ/): Hosts solutions from [DMOJ](https://dmoj.ca)
 * ... (To be expanded)
 
 ## License
