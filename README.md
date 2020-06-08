@@ -11,6 +11,7 @@
 
 ## Key (in alphabetical order)
 * [`CF/`](CF/): Hosts solutions from [Codeforces](https://codeforces.com)
+* [`CSES/`](CSES/): Hosts solutions from the [CSES Problem Set](https://cses.fi/problemset/list/)
 * [`DMOJ/`](DMOJ/): Hosts solutions from [DMOJ](https://dmoj.ca)
 * ... (To be expanded)
 
