@@ -97,7 +97,6 @@ jobs:
     - name: Before Deploy 
       run: |
         mkdir deploy
-        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < manifest.yml > manifest.json
         cp ./manifest.yml deploy/
         cp ./*.json deploy/
       
