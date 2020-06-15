@@ -9,12 +9,12 @@
     }
   },
   "last-update": {
-    "time": "2020-06-16 01:01:44 +0000",
-    "commit-hash": "2874dff9dd08350c81ba833dfdd8b7440cac6162",
+    "time": "2020-06-16 01:59:42 +0000",
+    "commit-hash": "188f9068e54e9a1ccbdeab41cbb602429d12e551",
     "triggered-by": "tanxpyox"
   },
   "completed": {
-    "count": 85,
+    "count": 86,
     "tasks": [
       "CF/110A",
       "CF/112A",
@@ -86,6 +86,7 @@
       "CSES/1072",
       "CSES/1083",
       "CSES/1094",
+      "CSES/1621",
       "DMOJ/16bitswonly",
       "DMOJ/4ever",
       "DMOJ/aminusb",
@@ -104,7 +105,9 @@
     ]
   },
   "under-development": {
-    "count": 0,
-    "tasks": null
+    "count": 1,
+    "tasks": [
+      "CSES/1638"
+    ]
   }
 }
