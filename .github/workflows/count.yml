@@ -22,14 +22,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Setup Ruby, JRuby and TruffleRuby
-      uses: ruby/setup-ruby@v1.34.0
-      with:
-        # Engine and version to use, see the syntax in the README. Reads from .ruby-version or .tool-versions if unset.
-        ruby-version: 2.7.1
-        # The version of Bundler to install. Either none, 1, 2, latest or Gemfile.lock. The default tries Gemfile.lock and otherwise uses latest.
-        bundler: latest
-        # The working directory to use for resolving paths for .ruby-version, .tool-versions and Gemfile.lock.
-        working-directory: .
+      uses: ruby/setup-ruby@v1.76.0
 
     - name: Install JSON gem
       run: |
