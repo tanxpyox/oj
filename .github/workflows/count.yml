@@ -23,7 +23,7 @@ jobs:
     
     - name: Install JSON gem
       run: |
-        gem install rjson
+        sudo gem install rjson
 
     # Runs a set of commands using the runners shell
     - name: Create manifest files
