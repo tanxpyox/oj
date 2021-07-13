@@ -20,13 +20,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    - name: Setup Ruby, JRuby and TruffleRuby
-      uses: ruby/setup-ruby@v1.76.0
-      with:
-        ruby-version: latest
-        bundler: true
-        working-directory: . 
     
     - name: Install JSON gem
       run: |
