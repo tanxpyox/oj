@@ -23,7 +23,11 @@ jobs:
 
     - name: Setup Ruby, JRuby and TruffleRuby
       uses: ruby/setup-ruby@v1.76.0
-
+      with:
+        ruby-version: latest
+        bundler: true
+        working-directory: . 
+    
     - name: Install JSON gem
       run: |
         gem install rjson
