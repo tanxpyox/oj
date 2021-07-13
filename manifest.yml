@@ -7,12 +7,12 @@ metadata:
     AGPLv3: https://github.com/tanxpyox/oj/blob/master/LICENSE
 
 last-update:
-  time: 2020-06-16 01:59:42
-  commit-hash: 188f9068e54e9a1ccbdeab41cbb602429d12e551
+  time: 2021-07-14 00:53:57
+  commit-hash: 1fe04b20655292bd957aadf3f6b9ab71c7db4208
   triggered-by: tanxpyox
 
 completed: 
-  count: 86
+  count: 87
   tasks:
     - CF/110A
     - CF/112A
@@ -100,6 +100,7 @@ completed:
     - DMOJ/dpe
     - DMOJ/dpk
     - DMOJ/helloworld
+    - misc/dumb_hash
 
 under-development: 
   count: 1
