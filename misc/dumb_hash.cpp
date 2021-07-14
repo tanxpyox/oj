@@ -15,16 +15,16 @@ int find(string a){
 	for (int i=0; i<26; i++){
 		int index = (shash(a) + i) % 26;
 		if (status[index] == 1) {
-			if (hash_tab[index] == a) return index;
-			else continue;
+			if (hash_tab[index] == a) return index; // found
+			else continue; 
 		} else if (status[index] == 0) {
-			return -index-1;
+			return -index-1; // not found and free at index
 		} else {
 			continue;
 		}
 	}
 	
-	return -INF;
+	return -INF; // full and not found
 }
 
 void del(string a){
@@ -35,7 +35,7 @@ void del(string a){
 
 void ins(string a){
 	int temp = find(a);
-	if (temp > 0) return;
+	if (temp > 0 || temp == -INF) return;
 	else {
 		status[-temp-1] = 1;
 		hash_tab[-temp-1] = a;
@@ -45,17 +45,17 @@ void ins(string a){
 int main () {
 	memset(status, 0, sizeof(status));
 	
-//	string word;
-//	while (cin >> word) {
-//		if (word[0] == 'A') ins(&word[1]);
-//		else if (word[0] == 'D') del(&word[1]);
-//	}
+	string word;
+	while (cin >> word) {
+		if (word[0] == 'A') ins(&word[1]);
+		else if (word[0] == 'D') del(&word[1]);
+	}
 	
 	for(int i=0; i<26; i++){
-//		if (status[i] == 1) {
+		if (status[i] == 1) {
 			cout << hash_tab[i];
 			cout << status[i];
 			(i == 25) ? cout << endl : cout << " " ;	
-//		}
+		}
 	}
 }
